@@ -19,7 +19,7 @@ io.sockets.on('connection', function(socket){
 
 var port = process.env.PORT || 3000; 
 server.listen(port, function() {
-  var addr = app.address(); 
+  var addr = server.address(); 
   console.log('app listening on http://' + addr.address + ':' + addr.port);   
 }); 
 /*
